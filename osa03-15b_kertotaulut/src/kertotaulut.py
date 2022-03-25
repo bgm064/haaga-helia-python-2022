@@ -1,7 +1,14 @@
 # Kirjoita ratkaisu tähän
-sana = input("Anna merkkijono: ")
-osa = input("Anna osajono: ")
+num = int(input("Anna luku: "))
+i = 1
+j = 1
 
-kohta = sana.find(osa)
-
-print(kohta)
+while i + j < num + num:
+    print(i, " x ", j, " = ", i * j)
+    j += 1
+        
+    if j > num:
+        j = 1
+        i += 1
+    
+print(i, " x ", j, " = ", i * j)
